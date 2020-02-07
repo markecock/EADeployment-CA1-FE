@@ -1,20 +1,15 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+Sample FE code for Services for EAD CA1
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+1. Install nodejs: https://nodejs.org/en/download/
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+2. cd ..../nodejs project folder
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+3. execute: npm install
+ - This will use the content of the package.json file and install any needed dependencies into /node-modules folder
+
+4. To run code locally type: node fe-server.js
+ - Can access code on http://localhost:22137
+ - 22137 can be changed in /config/config.json property "exposedPort"
