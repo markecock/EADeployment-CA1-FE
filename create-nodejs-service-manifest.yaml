@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   # deployment name
@@ -8,6 +8,9 @@ metadata:
 spec:
   # modify replicas according to your case
   replicas: 1 
+  selector:
+    matchLabels:
+      app: node
   # pod template
   template:
     metadata:
