@@ -42,13 +42,6 @@ stages:
       inputs:
         script: 'sed -i ''s/nodejs-server:latest/$(imageRepository):$(tag)/g'' create-nodejs-service-manifest.yaml'
 
-    - task: CmdLine@2
-      displayName: Inline Scanner
-      inputs:
-        script: |
-          curl -s https://ci-tools.anchore.io/inline_scan-v0.6.0 | bash -s -- -p alpine:latest
-          ls
-
     - task: PublishPipelineArtifact@1
       displayName: Publish Artifact for Release
       inputs:
