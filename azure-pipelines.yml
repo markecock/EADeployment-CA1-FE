@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '369a705e-89ea-4693-a632-90f5fa2e5d4d'
+  dockerRegistryServiceConnection: '7fb8e137-cf36-47e9-a0de-a49cfd5ced2c'
   imageRepository: 'nodejs-server'
   containerRegistry: 'knolanacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
